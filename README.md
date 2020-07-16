@@ -1,3 +1,5 @@
+**Moved to https://github.com/mediafellows/ansible-role-telegraf**
+
 [![Build Status](https://travis-ci.com/mediapeers/ansible-role-telegraf.svg?branch=master)](https://travis-ci.com/mediapeers/ansible-role-telegraf)
 
 # Ansible role for Telegraf

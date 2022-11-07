@@ -24,7 +24,7 @@
 [[outputs.{{ plugin.name }}]]
 {% if plugin.options is defined %}
 {% for key, value in plugin.options.items()|list %}
-  {{ key }} = {{ value|to_json }}
+  {{ key }} = {{ value }}
 {% endfor %}
 {% endif %}
 
@@ -35,25 +35,25 @@
 [[inputs.{{ plugin.name }}]]
 {% if plugin.options is defined %}
 {% for key, value in plugin.options.items()|list %}
-  {{ key }} = {{ value|to_json }}
+  {{ key }} = {{ value }}
 {% endfor %}
 {% endif %}
 {% if plugin.tags is defined %}
   [inputs.{{ plugin.name }}.tags]
 {% for key, value in plugin.tags.items()|list %}
-    {{ key }} = {{ value|to_json }}
+    {{ key }} = {{ value }}
 {% endfor %}
 {% endif %}
 {% if plugin.tagpass is defined %}
   [inputs.{{ plugin.name }}.tagpass]
 {% for key, value in plugin.tagpass.items()|list %}
-    {{ key }} = {{ value|to_json }}
+    {{ key }} = {{ value }}
 {% endfor %}
 {% endif %}
 {% if plugin.tagdrop is defined %}
   [inputs.{{ plugin.name }}.tagdrop]
 {% for key, value in plugin.tagdrop.items()|list %}
-    {{ key }} = {{ value|to_json }}
+    {{ key }} = {{ value }}
 {% endfor %}
 {% endif %}
 
